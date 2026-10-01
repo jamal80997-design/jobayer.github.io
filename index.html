@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EME Tours | ট্যুর, ভিসা ও এয়ার টিকেট</title>
+<meta name="description" content="কক্সবাজার, সেন্টমার্টিন, সিলেট, ভুটান ও থাইল্যান্ড ট্যুর প্যাকেজ, ভিসা সার্ভিস ও এয়ার টিকেট।">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style3.css">
+</head>
+<body>
+
+<div class="offer">শীতকালীন অফার: কক্সবাজারের সব প্যাকেজে ১৫% ছাড়</div>
+
+<header class="nav">
+  <a class="logo" href="#home">EME <span>Tours</span></a> <!-- এখানে ক্লায়েন্টের নাম/লোগো বসান -->
+  <nav id="menu">
+    <a href="#packages">প্যাকেজ</a>
+    <a href="#visa">ভিসা</a>
+    <a href="#why">কেন আমরা</a>
+    <a href="#faq">প্রশ্নোত্তর</a>
+    <a href="#contact">যোগাযোগ</a>
+  </nav>
+  <button class="lang" id="langBtn" aria-label="Change language">EN</button>
+  <a class="btn" href="#contact">বুক করুন</a>
+  <button class="burger" id="burger" aria-label="Menu">☰</button>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-inner">
+    <p class="eyebrow">প্রিমিয়াম ট্রাভেল অভিজ্ঞতা</p>
+    <h1>আপনার পরের ভ্রমণ শুরু হোক এখান থেকে</h1>
+    <p>সঠিক দামে ট্যুর প্যাকেজ, ভিসা ও এয়ার টিকেট।</p>
+    <form class="search" id="searchForm">
+      <select id="sDest">
+        <option value="all">সব গন্তব্য</option>
+        <option value="coxsbazar">কক্সবাজার</option>
+        <option value="saintmartin">সেন্টমার্টিন</option>
+        <option value="sylhet">সিলেট</option>
+        <option value="sundarbans">সুন্দরবন</option>
+        <option value="bhutan">ভুটান</option>
+        <option value="thailand">থাইল্যান্ড</option>
+      </select>
+      <input type="date" aria-label="Travel date">
+      <select id="sBudget">
+        <option value="0">যেকোনো বাজেট</option>
+        <option value="10000">১০,০০০ টাকার মধ্যে</option>
+        <option value="25000">২৫,০০০ টাকার মধ্যে</option>
+        <option value="80000">৮০,০০০ টাকার মধ্যে</option>
+      </select>
+      <button class="btn" type="submit">খুঁজুন</button>
+    </form>
+  </div>
+</section>
+
+<section class="section" id="packages">
+  <h2>জনপ্রিয় ট্যুর প্যাকেজ</h2>
+  <div class="filters" id="filters">
+    <button class="chip active" data-f="all">সব</button>
+    <button class="chip" data-f="coxsbazar">কক্সবাজার</button>
+    <button class="chip" data-f="saintmartin">সেন্টমার্টিন</button>
+    <button class="chip" data-f="sylhet">সিলেট</button>
+    <button class="chip" data-f="sundarbans">সুন্দরবন</button>
+    <button class="chip" data-f="bhutan">ভুটান</button>
+    <button class="chip" data-f="thailand">থাইল্যান্ড</button>
+  </div>
+  <div class="grid" id="pkgGrid">
+    <!-- ছবি বদলাতে style3.css এ .img1 ... .img6 এর background-image পরিবর্তন করুন -->
+    <article class="card" data-dest="coxsbazar" data-price="9500">
+      <div class="thumb img1"><span class="tag">১৫% ছাড়</span></div>
+      <div class="body"><h3>কক্সবাজার ৩ দিন ২ রাত</h3><p class="meta">★ ৪.৮ &nbsp;|&nbsp; ৩ দিন</p>
+      <p class="price">৯,৫০০ টাকা <small>জনপ্রতি</small></p><a class="btn sm" href="#contact" data-pkg="কক্সবাজার ৩ দিন ২ রাত">বিস্তারিত ও বুকিং</a></div>
+    </article>
+    <article class="card" data-dest="saintmartin" data-price="8500">
+      <div class="thumb img2"></div>
+      <div class="body"><h3>সেন্টমার্টিন ২ দিন ১ রাত</h3><p class="meta">★ ৪.৭ &nbsp;|&nbsp; ২ দিন</p>
+      <p class="price">৮,৫০০ টাকা <small>জনপ্রতি</small></p><a class="btn sm" href="#contact" data-pkg="সেন্টমার্টিন ২ দিন ১ রাত">বিস্তারিত ও বুকিং</a></div>
+    </article>
+    <article class="card" data-dest="sylhet" data-price="7800">
+      <div class="thumb img3"></div>
+      <div class="body"><h3>সিলেট ও জাফলং ৩ দিন</h3><p class="meta">★ ৪.৬ &nbsp;|&nbsp; ৩ দিন</p>
+      <p class="price">৭,৮০০ টাকা <small>জনপ্রতি</small></p><a class="btn sm" href="#contact" data-pkg="সিলেট ও জাফলং ৩ দিন">বিস্তারিত ও বুকিং</a></div>
+    </article>
+    <article class="card" data-dest="sundarbans" data-price="12500">
+      <div class="thumb img4"></div>
+      <div class="body"><h3>সুন্দরবন ৩ দিন ২ রাত</h3><p class="meta">★ ৪.৯ &nbsp;|&nbsp; ৩ দিন</p>
+      <p class="price">১২,৫০০ টাকা <small>জনপ্রতি</small></p><a class="btn sm" href="#contact" data-pkg="সুন্দরবন ৩ দিন ২ রাত">বিস্তারিত ও বুকিং</a></div>
+    </article>
+    <article class="card" data-dest="bhutan" data-price="55000">
+      <div class="thumb img5"></div>
+      <div class="body"><h3>ভুটান ৫ দিন ৪ রাত</h3><p class="meta">★ ৪.৮ &nbsp;|&nbsp; ৫ দিন</p>
+      <p class="price">৫৫,০০০ টাকা <small>জনপ্রতি</small></p><a class="btn sm" href="#contact" data-pkg="ভুটান ৫ দিন ৪ রাত">বিস্তারিত ও বুকিং</a></div>
+    </article>
+    <article class="card" data-dest="thailand" data-price="48000">
+      <div class="thumb img6"></div>
+      <div class="body"><h3>থাইল্যান্ড ৫ দিন ৪ রাত</h3><p class="meta">★ ৪.৭ &nbsp;|&nbsp; ৫ দিন</p>
+      <p class="price">৪৮,০০০ টাকা <small>জনপ্রতি</small></p><a class="btn sm" href="#contact" data-pkg="থাইল্যান্ড ৫ দিন ৪ রাত">বিস্তারিত ও বুকিং</a></div>
+    </article>
+  </div>
+  <p class="empty" id="empty" hidden>এই ফিল্টারে কোনো প্যাকেজ নেই। অন্য গন্তব্য বা বাজেট বেছে নিন।</p>
+</section>
+
+<section class="section alt" id="why">
+  <h2>কেন আমাদের সাথে ভ্রমণ করবেন</h2>
+  <div class="grid four">
+    <div class="feat"><b>সেরা দাম</b><p>লুকানো চার্জ ছাড়া পরিষ্কার মূল্য।</p></div>
+    <div class="feat"><b>২৪/৭ সাপোর্ট</b><p>ভ্রমণের সময় যেকোনো সমস্যায় ফোন বা হোয়াটসঅ্যাপে পাশে আছি।</p></div>
+    <div class="feat"><b>যাচাই করা হোটেল</b><p>নিজেরা দেখে নেওয়া হোটেল ও রিসোর্ট।</p></div>
+    <div class="feat"><b>সহজ পেমেন্ট</b><p>বিকাশ, নগদ, ব্যাংক ট্রান্সফার ও কার্ড।</p></div>
+  </div>
+</section>
+
+<section class="section" id="visa">
+  <h2>ভিসা সার্ভিস</h2>
+  <div class="grid four">
+    <div class="feat"><b>থাইল্যান্ড</b><p>প্রসেসিং: ৫–৭ কর্মদিবস</p><a class="btn sm" href="#contact" data-pkg="থাইল্যান্ড ভিসা">আবেদন করুন</a></div>
+    <div class="feat"><b>মালয়েশিয়া</b><p>প্রসেসিং: ৭–১০ কর্মদিবস</p><a class="btn sm" href="#contact" data-pkg="মালয়েশিয়া ভিসা">আবেদন করুন</a></div>
+    <div class="feat"><b>ভারত</b><p>প্রসেসিং: ৩–৫ কর্মদিবস</p><a class="btn sm" href="#contact" data-pkg="ভারত ভিসা">আবেদন করুন</a></div>
+    <div class="feat"><b>দুবাই</b><p>প্রসেসিং: ৪–৭ কর্মদিবস</p><a class="btn sm" href="#contact" data-pkg="দুবাই ভিসা">আবেদন করুন</a></div>
+  </div>
+</section>
+
+<section class="section alt" id="faq">
+  <h2>সাধারণ প্রশ্ন</h2>
+  <div class="faq">
+    <details><summary>বুকিং করতে কত টাকা অগ্রিম দিতে হয়?</summary><p>সাধারণত মোট মূল্যের ৩০–৫০% অগ্রিম দিয়ে বুকিং নিশ্চিত হয়। বাকি টাকা ভ্রমণের আগে দিতে হবে।</p></details>
+    <details><summary>বাতিল করলে কি টাকা ফেরত পাব?</summary><p>ভ্রমণের তারিখের কত দিন আগে বাতিল করছেন তার ওপর রিফান্ড নির্ভর করে। বুকিংয়ের সময় লিখিত পলিসি দেওয়া হয়।</p></details>
+    <details><summary>কোন কোন মাধ্যমে পেমেন্ট করা যায়?</summary><p>বিকাশ, নগদ, ব্যাংক ট্রান্সফার এবং কার্ড।</p></details>
+    <details><summary>ভিসার জন্য কী কী কাগজ লাগে?</summary><p>পাসপোর্ট, ছবি, ব্যাংক স্টেটমেন্ট ও এনআইডি সাধারণত লাগে। দেশ অনুযায়ী তালিকা বদলায়, যোগাযোগ করলে পূর্ণ তালিকা দেব।</p></details>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <h2>বুকিং বা প্রশ্ন করুন</h2>
+  <div class="contact">
+    <div class="info">
+      <p><b>ফোন:</b> +880 1700-000000</p> <!-- আসল নম্বর বসান -->
+      <p><b>ইমেইল:</b> info@emetours.example</p>
+      <p><b>ঠিকানা:</b> ১২ মতিঝিল বা/এ, ঢাকা-১০০০</p>
+      <p class="badges"><span>ট্রেড লাইসেন্স</span><span>IATA</span><span>TAAB</span></p>
+    </div>
+    <form class="form" id="bookForm">
+      <input id="fName" placeholder="আপনার নাম" required>
+      <input id="fPhone" type="tel" placeholder="ফোন নম্বর" required>
+      <input id="fPkg" placeholder="প্যাকেজ বা সার্ভিস (যেমন: কক্সবাজার ট্যুর)">
+      <input id="fDate" type="date" aria-label="Travel date">
+      <input id="fPax" type="number" min="1" placeholder="কতজন ভ্রমণ করবেন">
+      <button class="btn" type="submit">হোয়াটসঅ্যাপে পাঠান</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 EME Tours. সর্বস্বত্ব সংরক্ষিত।</p>
+  <p>পেমেন্ট: বিকাশ · নগদ · Visa · Mastercard</p>
+</footer>
+
+<!-- ফোন নম্বর বদলাতে script3.js এর PHONE ভ্যারিয়েবল এবং নিচের tel লিংক বদলান -->
+<a class="float call" href="tel:+8801700000000" aria-label="Call">📞</a>
+<a class="float wa" id="waBtn" href="#" target="_blank" rel="noopener" aria-label="WhatsApp">WhatsApp</a>
+
+<script src="script3.js"></script>
+</body>
+</html>
